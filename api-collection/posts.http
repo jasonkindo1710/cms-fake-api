@@ -1,0 +1,45 @@
+# Users
+
+@baseUrl = http://localhost:3000/api
+@resourceName = posts
+
+# @name getAllPosts
+GET {{baseUrl}}/{{resourceName}}
+
+###
+# @name getPost
+GET {{baseUrl}}/{{resourceName}}/acc751cc-aabe-47db-bbda-82ff80aa1323
+
+###
+# @name addnew
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "title": "Đập đập cửa 123 biển mười ruộng một trời con nhà.",
+  "slug": "lu-t-gi",
+  "excerpt": "bảy xe vàng",
+  "content": "Chìm nghỉ nghỉ thích gió ruộng đang chín. Tủ lầu đâu giết đã tím em hết núi. Chỉ máy tàu đánh đạp nón vá việc tủ. Đỏ đâu quần đang. Ác hàng anh viết phá hóa. Lầu việc bàn đâu mướn máy làm hóa đang.\nĐạp tám thì nhà bàn bảy. Giết bơi nước núi. Cửa leo dép lầu lỗi đồng. Năm chín ghế bảy đâu ác đỏ hóa ờ.\nLeo khoảng độc xuồng chín gì vàng. Khâu vàng trời. Không phá chỉ đá hai tui cái là áo. Đá biết bè máy hương bè tủ vẽ.",
+  "featuredImage": "https://loremflickr.com/400/400",
+  "createdAt": 1662275836762,
+  "updatedAt": 1662275836762
+}
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resourceName}}/rz0cqI4
+
+{
+     "title": "Đập đập cửa 123 biển mười ruộng một trời con nhà.",
+  "slug": "lu-t-gi",
+  "excerpt": "bảy xe vàng 123123",
+  "content": "Chìm nghỉ nghỉ thích gió ruộng đang chín. Tủ lầu đâu giết đã tím em hết núi. Chỉ máy tàu đánh đạp nón vá việc tủ. Đỏ đâu quần đang. Ác hàng anh viết phá hóa. Lầu việc bàn đâu mướn máy làm hóa đang.\nĐạp tám thì nhà bàn bảy. Giết bơi nước núi. Cửa leo dép lầu lỗi đồng. Năm chín ghế bảy đâu ác đỏ hóa ờ.\nLeo khoảng độc xuồng chín gì vàng. Khâu vàng trời. Không phá chỉ đá hai tui cái là áo. Đá biết bè máy hương bè tủ vẽ.",
+  "featuredImage": "https://loremflickr.com/400/400",
+  "createdAt": 1662275836762,
+  "updatedAt": 1662275836762
+}
+
+###
+# @name remove
+DELETE {{baseUrl}}/{{resourceName}}/rz0cqI4

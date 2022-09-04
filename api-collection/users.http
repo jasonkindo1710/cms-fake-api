@@ -1,0 +1,44 @@
+# Users
+
+@baseUrl = http://localhost:3000/api
+@resourceName = users
+
+# @name getAllUsers
+GET {{baseUrl}}/{{resourceName}}
+
+###
+# @name getUser
+GET {{baseUrl}}/{{resourceName}}/95701
+
+###
+# @name addnew
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "avatar": "https://loremflickr.com/400/400",
+    "fullname": "kakaka",
+    "username": "nana",
+    "role": "admin",
+    "createdAt": 1662275836759,
+    "updatedAt": 1662275836759
+}
+
+###
+
+# @users update
+PATCH {{baseUrl}}/{{resourceName}}/95701
+
+{
+    "avatar": "https://loremflickr.com/400/400",
+    "fullname": "uuuuu",
+    "username": "Hoangnanana",
+    "role": "user",
+    "createdAt": 1662275836759,
+    "updatedAt": 1662275836759,
+    "id": 95701
+}
+
+###
+# @name remove
+DELETE {{baseUrl}}/{{resourceName}}/95701

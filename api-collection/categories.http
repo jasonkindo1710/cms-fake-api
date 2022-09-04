@@ -1,0 +1,42 @@
+# Users
+
+@baseUrl = http://localhost:3000/api
+@resourceName = categories
+
+# @name getAllCategories
+GET {{baseUrl}}/{{resourceName}}
+
+###
+# @name getCategory
+GET {{baseUrl}}/{{resourceName}}/6NNtyZc
+
+###
+# @name addnew
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{ "categoryId": "12c9cac4-cabd-4503-8eeb-d1ea8e9f9e77",
+  "slug": "bn-ght-bi",
+  "image": "https://loremflickr.com/400/400",
+  "description": "Xuồng biển 123123 khâu ruộng ba thích con. Quần vàng ờ quần khoảng chỉ. Xe giày xe cái. Vẽ đồng ác khâu.\nBảy viết cửa bạn. Khoảng yêu xe núi mây bơi. Viết không giày vá lỗi một may.\nBảy ruộng kim thì. Chín con bàn hết đập ừ chín chỉ. Thích hai nước là.",
+  "createdAt": 1662276798319,
+  "updatedAt": 1662276798319
+}
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resourceName}}/6NNtyZc
+
+{
+  "categoryId": "12c9cac4-cabd-4503-8eeb-d1ea8e9f9e77",
+  "slug": "bn-ght-bi",
+  "image": "https://loremflickr.com/400/400",
+  "description": "Xuồng biển 123123 123213khâu ruộng ba thích con. Quần vàng ờ quần khoảng chỉ. Xe giày xe cái. Vẽ đồng ác khâu.\nBảy viết cửa bạn. Khoảng yêu xe núi mây bơi. Viết không giày vá lỗi một may.\nBảy ruộng kim thì. Chín con bàn hết đập ừ chín chỉ. Thích hai nước là.",
+  "createdAt": 1662276798319,
+  "updatedAt": 1662276798319
+}
+
+###
+# @name remove
+DELETE {{baseUrl}}/{{resourceName}}/6NNtyZc
